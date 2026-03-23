@@ -1,6 +1,6 @@
 # 🤖 GenAI Interview Preparation
 
-A structured 15-day hands-on learning journey to become a **GenAI / LLM Engineer** — from Python fundamentals to building and deploying real AI products.
+A structured hands-on learning journey to become a **GenAI / LLM Engineer** — from Python fundamentals to building and deploying real AI products.
 
 > **Goal:** Land my first job as a GenAI Engineer by building deep understanding, not just copying code.
 
@@ -8,76 +8,75 @@ A structured 15-day hands-on learning journey to become a **GenAI / LLM Engineer
 
 ## 📊 Progress Tracker
 
-| Phase | Days | Topics | Status |
-|---|---|---|---|
-| 🔵 Phase 1: Foundations | Day 1–5 | Python OOP, Math, Embeddings, Transformers | 🔄 In Progress |
-| 🟡 Phase 2: LLM + RAG | Day 6–10 | LLMs, RAG from scratch, Vector DBs, LlamaIndex | ⏳ Upcoming |
-| 🟢 Phase 3: Build + Ship | Day 11–15 | FastAPI, Resume Screener, Docker, Deployment | ⏳ Upcoming |
+| Phase | Topics | Status |
+|---|---|---|
+| 🔵 Phase 1: Foundations | Python OOP, Math, Embeddings, Transformers | 🔄 In Progress |
+| 🟡 Phase 2: LLM + RAG | LLMs, RAG from scratch, Vector DBs, LlamaIndex | ⏳ Upcoming |
+| 🟢 Phase 3: Build + Ship | FastAPI, Resume Screener, Docker, Deployment | ⏳ Upcoming |
 
 ---
 
-## 🗓️ 15-Day Learning Plan
+## 🗓️ Learning Plan
 
-### 🔵 Phase 1: Foundations (Day 1–5)
+### 🔵 Phase 1: Foundations
 
-#### Day 1 — Python Deep Dive
+**Python Deep Dive**
 - OOP: classes, inheritance, dunder methods
 - Decorators & context managers
 - Async/await basics
-- **Task:** Write `BankAccount`, `Stack`, `ResumeParser` classes from scratch
+- Write `BankAccount`, `Stack`, `ResumeParser` classes from scratch
 
-#### Day 2 — Math for ML
+**Math for ML**
 - Vectors & matrices with NumPy
 - Implement cosine similarity manually
-- Gradient intuition (no math — just code)
-- **Task:** Build `find_most_similar`, `normalize_vector`, `batch_similarity`
+- Gradient intuition through code
+- Build `find_most_similar`, `normalize_vector`, `batch_similarity`
 
-#### Day 3 — Neural Networks Intuition
+**Neural Networks Intuition**
 - How a neuron works (weights, bias, activation)
 - Forward pass coded from scratch in NumPy
 - Backpropagation intuition
-- **Resource:** Karpathy — "The spelled-out intro to neural networks"
+- Resource: Karpathy — "The spelled-out intro to neural networks"
 
-#### Day 4 — Embeddings & Vector Math
+**Embeddings & Vector Math**
 - What IS an embedding? (words as coordinates)
-- Load HuggingFace model, embed 10 sentences
+- Load HuggingFace model, embed sentences
 - Find most similar sentence — no libraries
-- **Task:** Build mini semantic search engine
+- Build mini semantic search engine from scratch
 
-#### Day 5 — Transformers Conceptually
+**Transformers Conceptually**
 - Attention mechanism — what problem it solves
 - Tokens, context window, why it matters
-- **Resource:** "The Illustrated Transformer" by Jay Alammar
+- Resource: "The Illustrated Transformer" by Jay Alammar
 
 ---
 
-### 🟡 Phase 2: LLM + RAG (Day 6–10)
+### 🟡 Phase 2: LLM + RAG
 
-#### Day 6 — LLM Fundamentals
+**LLM Fundamentals**
 - Temperature, top_p, top_k — experiment with all 3
 - System prompt vs user prompt
 - Why hallucination happens and how to reduce it
 - Prompt engineering: chain of thought, few-shot
 
-#### Day 7 — RAG From Scratch
+**RAG From Scratch**
 - Build RAG with zero frameworks — raw Python
 - Chunk a document manually, embed each chunk
 - Store in a Python dict (not ChromaDB yet)
 - Query: embed → find closest chunk → send to LLM
 
-#### Day 8 — Vector Databases Deep Dive
+**Vector Databases Deep Dive**
 - Why we need vector DBs (not regular SQL)
 - ChromaDB: insert, query, delete, update
 - HNSW index (conceptually)
 - Compare cosine vs dot product vs euclidean
 
-#### Day 9 — LlamaIndex Internals
+**LlamaIndex Internals**
 - Read LlamaIndex source: how does it chunk?
 - Chunking strategies: fixed, semantic, recursive
-- Re-read Repo Copilot code — explain every line
-- **Task:** Build RAG pipeline — no copy-paste
+- Build full RAG pipeline — no copy-paste
 
-#### Day 10 — Advanced RAG Techniques
+**Advanced RAG Techniques**
 - Hybrid search: dense + sparse (BM25)
 - Re-ranking: what it is and why it helps
 - Evaluate RAG: precision, recall, faithfulness
@@ -85,37 +84,37 @@ A structured 15-day hands-on learning journey to become a **GenAI / LLM Engineer
 
 ---
 
-### 🟢 Phase 3: Build + Ship (Day 11–15)
+### 🟢 Phase 3: Build + Ship
 
-#### Day 11 — FastAPI + System Design
+**FastAPI + System Design**
 - Build REST API with FastAPI from scratch
 - Pydantic models for request/response validation
 - Async endpoints for LLM calls
 - Design resume screener architecture on paper
 
-#### Day 12 — Resume Screener Core
+**Resume Screener Core**
 - PDF parsing with PyMuPDF
 - Resume parser agent with Groq LLM
 - Match scoring agent
-- **Rule:** Write every line yourself
+- Every line written from scratch
 
-#### Day 13 — Skill Gap + Rewriter Agents
+**Skill Gap + Rewriter Agents**
 - Skill gap analysis agent
 - Resume bullet rewriter agent
 - Connect all agents in main.py
 - Test with 3 different resumes + job descriptions
 
-#### Day 14 — Docker + Deployment
+**Docker + Deployment**
 - Dockerize the FastAPI app
 - Write docker-compose.yml
 - Deploy on Railway / Render
-- Get a live URL to share with recruiters
+- Live URL to share with recruiters
 
-#### Day 15 — Interview Prep + README
-- Write killer README with architecture diagram
-- Prepare answers: why RAG not fine-tuning?
+**Interview Prep**
+- Architecture diagrams
+- Prepare answers for common GenAI questions
 - Record a 2-min demo video
-- Push to GitHub with clean commit history
+- Clean commit history on GitHub
 
 ---
 
